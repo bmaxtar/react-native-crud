@@ -9,7 +9,7 @@ import Note from '../components/Note';
 import { useNotes } from '../contexts/NoteProvider';
 import NotFound from '../components/NotFound';
 
-const reverseData = date => {
+const reverseData = data => {
     return data.sort((a, b) => {
         const aInt = parseInt(a.time);
         const bInt = parseInt(b.time);

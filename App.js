@@ -13,7 +13,7 @@ const Stack = createStackNavigator()
 export default function App() {
 
   const [user, setUser] = useState({});
-  const [isAppFirstTimeeOpen, setIsAppFirstTimeOpen] = useSate(false);
+  const [isAppFirstTimeeOpen, setIsAppFirstTimeOpen] = useState(false);
 
   const findUser = async () => {
     const result = await AsyncStorage.getItem('user');
